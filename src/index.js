@@ -7,7 +7,8 @@ import './index.scss';
 
 ReactDOM.render(
   /**
-   * Provider is API of react-redux library which connects store to our application
+   * Provider - is API of react-redux library which connects store to our application
+   * useSelector - is API used for get redux state object in react components ( used in counter.js file )
    */
   <Provider store={store} >
     <React.StrictMode>
