@@ -2,7 +2,12 @@ import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { set } from "./store/actions";
 export const SetCounter = () => {
-  // getting count value form store
+  /**
+   * getting count value form store
+   * useSelector() will also subscribe to the Redux store,
+   * and run your selector whenever an action is dispatched.
+   */
+
   const countFromStore = useSelector(state => state.counter)
   /**
    * creating count state using useState and passing initial value as countFromStore
